@@ -101,14 +101,14 @@ userRouter.post("/login", async (req, res) => {
 
         const token = jwt.sign(
           { userId: user._id, user: user.name, role: user.role },
-          "SRM",
+          "LM",
           {
             expiresIn: "7d",
           }
         );
         const rToken = jwt.sign(
           { userId: user._id, user: user.name },
-          "SRM",
+          "LM",
           {
             expiresIn: "24d",
           }

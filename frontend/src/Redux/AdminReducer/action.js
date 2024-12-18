@@ -23,7 +23,7 @@ export const addProduct=(data)=>(dispatch)=>{
 
 export const addUser=(data)=>(dispatch)=>{
   dispatch({type:PRODUCT_REQUEST})
-  fetch("https://elearning-platform-using-mern-j5py.vercel.app/users/register",{
+  fetch("https://localhost:5000/users/register",{
     method:"POST",
     headers:{
       "Content-Type":"application/json",
